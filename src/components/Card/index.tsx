@@ -15,6 +15,7 @@ function Card({ todo, completeTodo, deleteTodo }: CardProps) {
   function handleDeleteTodo() {
     deleteTodo(todo.id);
   }
+  
   return (
     <div className={`card ${todo.completed ? "done" : ""}`}>
       <h2>{todo.title}</h2>
